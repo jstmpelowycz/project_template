@@ -1,6 +1,7 @@
 import pandas
+from pandas import DataFrame
 
-def read_text_from_console():
+def read_text_from_console() -> str:
     """
     Reads text input from console
 
@@ -10,7 +11,7 @@ def read_text_from_console():
     return input("Enter text: ")
 
 
-def read_from_file_builtin(filepath):
+def read_from_file_builtin(filepath: str) -> str:
     """
     Reads content from file using built-in capabilities
 
@@ -24,7 +25,7 @@ def read_from_file_builtin(filepath):
         return file.read()
 
 
-def read_from_file_pandas(filepath):
+def read_from_file_pandas(filepath: str) -> DataFrame:
     """
     Reads content from file using pandas library
 

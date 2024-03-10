@@ -1,8 +1,34 @@
 def read_text_from_console():
+    """
+    Reads text input from console
+
+    Returns:
+        str: Text entered by user
+    """
     pass
 
-def read_from_file_builtin():
+
+def read_from_file_builtin(filepath):
+    """
+    Reads content from file using built-in capabilities
+
+    Parameters:
+        - filepath (str): Path to file to be read
+
+    Returns:
+        str: File content
+    """
     pass
 
-def read_from_file_pandas():
+
+def read_from_file_pandas(filepath):
+    """
+    Reads content from file using pandas library
+
+    Parameters:
+        - filepath (str): Path to file to be read
+
+    Returns:
+        DataFrame: DataFrame containing the file data
+    """
     pass

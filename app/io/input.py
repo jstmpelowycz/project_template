@@ -1,3 +1,5 @@
+import pandas
+
 def read_text_from_console():
     """
     Reads text input from console
@@ -5,7 +7,7 @@ def read_text_from_console():
     Returns:
         str: Text entered by user
     """
-    pass
+    return input("Enter text: ")
 
 
 def read_from_file_builtin(filepath):
@@ -18,7 +20,8 @@ def read_from_file_builtin(filepath):
     Returns:
         str: File content
     """
-    pass
+    with open(filepath, 'r') as file:
+        return file.read()
 
 
 def read_from_file_pandas(filepath):
@@ -31,4 +34,4 @@ def read_from_file_pandas(filepath):
     Returns:
         DataFrame: DataFrame containing the file data
     """
-    pass
+    return pandas.read_csv(filepath)
